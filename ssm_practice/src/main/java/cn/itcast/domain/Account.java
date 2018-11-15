@@ -11,6 +11,16 @@ public class Account implements Serializable{
     private String name;
     private Double money;
 
+    private String sex;
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
     public Integer getId() {
         return id;
     }
