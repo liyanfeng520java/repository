@@ -11,6 +11,17 @@ public class Account implements Serializable{
     private String name;
     private Double money;
 
+    //添加字段
+    private Integer age;
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
     public Integer getId() {
         return id;
     }
