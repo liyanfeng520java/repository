@@ -5,22 +5,15 @@ import java.io.Serializable;
 /**
  * 帐户
  */
-public class Account implements Serializable{
+public class Account implements Serializable {
 
     private Integer id;
     private String name;
     private Double money;
+    private String sex;
 
     //添加字段
     private Integer age;
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 
     public Integer getId() {
         return id;
@@ -46,12 +39,21 @@ public class Account implements Serializable{
         this.money = money;
     }
 
-    @Override
-    public String toString() {
-        return "Account{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", money=" + money +
-                '}';
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+
+
     }
 }
